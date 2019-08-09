@@ -46,7 +46,7 @@ app.layout = html.Div(children=[
     html.H1('Flying Dog Beers'),
     dcc.Graph(
         id='flyingdog',
-        figure=fig
+        figure=beer_fig
     ),
     html.A('Code on Github', href='https://github.com/austinlasseter/flying-dog-beers'),
     html.Br(),
