@@ -5,37 +5,37 @@ import plotly.graph_objs as go
 
 ########### Set up the chart
 
-companies = ['Fannie', 'Freddie', 'FHLB', 'Farm Credit'];
-debt = [10, 20, 30, 40];
+companies = ['Fannie', 'Freddie', 'FHLB', 'Farm Credit']
+debt = [10, 20, 30, 40]
 fig = go.Pie(labels=companies, values=debt,
                         marker={'colors': ['#EF963B', '#C93277', '#349600', '#EF533B']}, textinfo='label')]
 
-#beers=['Chesapeake Stout', 'Snake Dog IPA', 'Imperial Porter', 'Double Dog IPA']
-#ibu_values=[35, 60, 85, 75]
-#abv_values=[5.4, 7.1, 9.2, 4.3]
-#color1='lightblue'
-#color2='darkgreen'
+beers=['Fannie', 'Freddie', 'FHLB', 'Farm Credit']
+ibu_values=[35, 60, 85, 75]
+abv_values=[5.4, 7.1, 9.2, 4.3]
+color1='lightblue'
+color2='darkgreen'
 
-#bitterness = go.Bar(
-#    x=beers,
-#    y=ibu_values,
-#    name='IBU',
-#    marker={'color':color1}
-#)
-#alcohol = go.Bar(
-#    x=beers,
-#    y=abv_values,
-#    name='ABV',
-#    marker={'color':color2}
-#)
+bitterness = go.Bar(
+    x=beers,
+    y=ibu_values,
+    name='IBU',
+    marker={'color':color1}
+)
+alcohol = go.Bar(
+    x=beers,
+    y=abv_values,
+    name='ABV',
+    marker={'color':color2}
+)
 
-#beer_data = [bitterness, alcohol]
-#beer_layout = go.Layout(
-#    barmode='group',
-#    title = 'Beer Comparison'
-#)
+beer_data = [bitterness, alcohol]
+beer_layout = go.Layout(
+    barmode='stack',
+    title = 'Beer Comparison'
+)
 
-#beer_fig = go.Figure(data=beer_data, layout=beer_layout)
+beer_fig = go.Figure(data=beer_data, layout=beer_layout)
 
 ########### Display the chart
 
