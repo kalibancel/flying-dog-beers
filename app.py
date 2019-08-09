@@ -5,10 +5,10 @@ import plotly.graph_objs as go
 
 ########### Set up the chart
 
-companies = ['Fannie', 'Freddie', 'FHLB', 'Farm Credit']
-debt = [10, 20, 30, 40]
-fig = go.Pie(labels=companies, values=debt,
-                        marker={'colors': ['#EF963B', '#C93277', '#349600', '#EF533B']}, textinfo='label')]
+#companies = ['Fannie', 'Freddie', 'FHLB', 'Farm Credit']
+#debt = [10, 20, 30, 40]
+#fig = go.Pie(labels=companies, values=debt,
+#                        marker={'colors': ['#EF963B', '#C93277', '#349600', '#EF533B']}, textinfo='label')]
 
 beers=['Fannie', 'Freddie', 'FHLB', 'Farm Credit']
 ibu_values=[35, 60, 85, 75]
